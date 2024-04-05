@@ -1,0 +1,1 @@
+# Ga_Patika_W6
