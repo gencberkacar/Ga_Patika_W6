@@ -1,0 +1,60 @@
+-- test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50),
+-- birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+-- Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+-- Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+-- Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+CREATE TABLE employee (
+	id INTEGER ,
+	name VARCHAR(50),
+	birthday DATE,
+	email VARCHAR(100)
+);
+insert into employee (id, name, birthday, email) values (1, 'Meral Yılmaz', '1985-06-15', 'myilmaz@example.com');
+insert into employee (id, name, birthday, email) values (2, 'Sinem Demir', '1990-04-22', 'sdemir@example.com');
+insert into employee (id, name, birthday, email) values (3, 'Can Ertuğrul', '1975-08-30', 'certugrul@example.com');
+insert into employee (id, name, birthday, email) values (4, 'Esra Polat', '1983-11-11', 'epolat@example.com');
+insert into employee (id, name, birthday, email) values (5, 'Oğuz Kaya', '1979-02-05', 'okay@example.com');
+insert into employee (id, name, birthday, email) values (6, 'İpek Öztürk', '1988-01-16', 'iozturk@example.com');
+insert into employee (id, name, birthday, email) values (7, 'Kemal Solak', '1992-03-23', 'ksolak@example.com');
+insert into employee (id, name, birthday, email) values (8, 'Duygu Aslan', '1993-12-12', 'daslan@example.com');
+insert into employee (id, name, birthday, email) values (9, 'Murat Çelik', '1974-07-19', 'mcelik@example.com');
+insert into employee (id, name, birthday, email) values (10, 'Elif Şahin', '1982-05-21', 'esahin@example.com');
+insert into employee (id, name, birthday, email) values (11, 'Berk Aydın', '1991-09-09', 'baydin@example.com');
+insert into employee (id, name, birthday, email) values (12, 'Seda Sayan', '1984-10-14', 'ssayan@example.com');
+insert into employee (id, name, birthday, email) values (13, 'Fatma Nur Karabulut', '1976-01-25', 'fkarabulut@example.com');
+insert into employee (id, name, birthday, email) values (14, 'Mehmet Ali Koç', '1987-03-17', 'makoc@example.com');
+insert into employee (id, name, birthday, email) values (15, 'Sibel Can', '1989-07-07', 'scan@example.com');
+insert into employee (id, name, birthday, email) values (16, 'Ahmet Yüksel', '1970-12-31', 'ayuksel@example.com');
+insert into employee (id, name, birthday, email) values (17, 'Gizem Arı', '1994-08-20', 'gari@example.com');
+insert into employee (id, name, birthday, email) values (18, 'Barış Manço', '1995-11-11', 'bmanco@example.com');
+insert into employee (id, name, birthday, email) values (19, 'Leyla Gencer', '1986-06-06', 'lgencer@example.com');
+insert into employee (id, name, birthday, email) values (20, 'Cem Karaca', '1988-02-28', 'ckaraca@example.com');
+insert into employee (id, name, birthday, email) values (21, 'Zeynep Bastık', '1992-04-15', 'zbastik@example.com');
+insert into employee (id, name, birthday, email) values (22, 'Tarkan Tevetoğlu', '1978-10-17', 'ttevetoglu@example.com');
+insert into employee (id, name, birthday, email) values (23, 'Sezen Aksu', '1990-01-13', 'saksu@example.com');
+insert into employee (id, name, birthday, email) values (24, 'Ajda Pekkan', '1972-03-02', 'apekkan@example.com');
+insert into employee (id, name, birthday, email) values (25, 'Neşet Ertaş', '1993-07-22', 'nertas@example.com');
+insert into employee (id, name, birthday, email) values (26, 'Orhan Gencebay', '1991-11-30', 'ogencebay@example.com');
+insert into employee (id, name, birthday, email) values (27, 'Bülent Ersoy', '1985-09-14', 'bersoy@example.com');
+insert into employee (id, name, birthday, email) values (28, 'Sertab Erener', '1994-05-18', 'serener@example.com');
+insert into employee (id, name, birthday, email) values (29, 'Ferdi Tayfur', '1983-08-25', 'ftayfur@example.com');
+insert into employee (id, name, birthday, email) values (30, 'Şebnem Ferah', '1979-04-12', 'sferah@example.com');
+insert into employee (id, name, birthday, email) values (31, 'Yıldız Tilbe', '1987-12-29', 'ytilbe@example.com');
+insert into employee (id, name, birthday, email) values (32, 'Teoman Yakupoğlu', '1971-10-05', 'tyakupoglu@example.com');
+insert into employee (id, name, birthday, email) values (33, 'Hakan Altun', '1990-06-23', 'haltun@example.com');
+insert into employee (id, name, birthday, email) values (34, 'Fikret Kızılok', '1978-03-30', 'fkizilok@example.com');
+insert into employee (id, name, birthday, email) values (35, 'Erkin Koray', '1982-07-27', 'ekoray@example.com');
+insert into employee (id, name, birthday, email) values (36, 'Candan Erçetin', '1986-09-11', 'cercetin@example.com');
+insert into employee (id, name, birthday, email) values (37, 'Kubat Özdemir', '1995-05-14', 'kozdemir@example.com');
+insert into employee (id, name, birthday, email) values (38, 'Gülben Ergen', '1992-08-08', 'gergen@example.com');
+insert into employee (id, name, birthday, email) values (39, 'Müzeyyen Senar', '1984-02-19', 'msenar@example.com');
+insert into employee (id, name, birthday, email) values (40, 'Işın Karaca', '1991-10-22', 'ikaraca@example.com');
+UPDATE employee SET name = 'gençberk acar', email = 'gencberkacar@gmail.com' WHERE id = 1;
+UPDATE employee SET birthday = '1996-08-18' WHERE name LIKE 'genç%';
+UPDATE employee SET birthday = '2011-01-03' WHERE name LIKE 'Ch%';
+
+DELETE FROM employee WHERE name LIKE 'S%';
+DELETE FROM employee WHERE birthday = '2011-11-14';
+DELETE FROM employee WHERE id = 4;
+DELETE FROM employee WHERE name = 'Sibel Can';
